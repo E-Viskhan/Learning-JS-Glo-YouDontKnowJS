@@ -10,6 +10,7 @@ const fifthBook = books[5];
 const sixthBook = books[2];
 const chaptersSecondBook = secondBook.querySelectorAll('li');
 const chaptersFifthBook = fifthBook.querySelectorAll('li');
+const chapterEightSixthBook = sixthBook.querySelectorAll('li')[8];
 const adv = document.querySelector('.adv');
 const liElem = document.createElement('li');
 
@@ -36,7 +37,8 @@ chaptersFifthBook[3].after(chaptersFifthBook[4]);
 chaptersFifthBook[7].after(chaptersFifthBook[5]);
 // Шестое задание
 liElem.textContent = 'Глава 8: За пределами ES6';
-sixthBook.insertAdjacentElement('beforeend', liElem);
+chapterEightSixthBook.after(liElem);
+// sixthBook.append(liElem);
 
 
 
